@@ -1,0 +1,13 @@
+{
+	"sessions" : {
+		"teste-1-adsasdasdasd" : {
+			"name" : "Teste 1",
+			"url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"nickname" : "OiEuSouUmBot",
+			"cor" : 5,
+			"service" : "uol",
+			"messages" : ["Oi, eu sou o Goku","Oi"],
+			"privateMessages" : ["Oi, eu sou o Goku","Oi"]
+		}
+	}
+}
