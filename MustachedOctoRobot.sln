@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monobot", "Monobot\Monobot.csproj", "{0ECB9D22-C217-4E44-9A30-190247EEB10C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MustachedOctoRobot", "MustachedOctoRobot\MustachedOctoRobot.csproj", "{0ECB9D22-C217-4E44-9A30-190247EEB10C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +15,6 @@ Global
 		{0ECB9D22-C217-4E44-9A30-190247EEB10C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Monobot\Monobot.csproj
+		StartupItem = MustachedOctoRobot\MustachedOctoRobot.csproj
 	EndGlobalSection
 EndGlobal

@@ -1,18 +1,16 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Monobot/Test.cshtml">
-    <Files>
-      <File FileName="Monobot/Service.cs" Line="37" Column="17" />
-      <File FileName="Monobot/Program.cs" Line="10" Column="9" />
-      <File FileName="Monobot/Test.cshtml" Line="11" Column="27" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Monobot" expanded="True">
-            <Node name="References" expanded="True">
-              <Node name="/mnt/Downloads/Projects/Monobot/Monobot/../packages/ServiceStack.Redis.3.9.43/lib/net35/ServiceStack.Redis.dll" selected="True" />
+          <Node name="MustachedOctoRobot" expanded="True">
+            <Node name="deps" expanded="True">
+              <Node name="CsQuery.dll" selected="True" />
             </Node>
+            <Node name="Properties" expanded="True" />
+            <Node name="Services" expanded="True" />
+            <Node name="Utils" expanded="True" />
           </Node>
         </State>
       </Pad>

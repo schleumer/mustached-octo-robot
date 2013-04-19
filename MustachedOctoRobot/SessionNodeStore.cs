@@ -4,7 +4,7 @@ using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Monobot
+namespace MustachedOctoRobot
 {
 
 

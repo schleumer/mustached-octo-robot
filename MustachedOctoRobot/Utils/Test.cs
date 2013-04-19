@@ -4,7 +4,7 @@ using System.Net;
 using System.Text;
 using System.Collections.Generic;
 
-namespace Monobot.Utils
+namespace MustachedOctoRobot.Utils
 {
 	public class Test
 	{

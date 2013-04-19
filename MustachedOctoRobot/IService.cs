@@ -1,6 +1,6 @@
 using System;
 
-namespace Monobot
+namespace MustachedOctoRobot
 {
 	public interface IService
 	{

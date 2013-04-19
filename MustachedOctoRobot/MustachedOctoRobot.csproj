@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{0ECB9D22-C217-4E44-9A30-190247EEB10C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Monobot</RootNamespace>
-    <AssemblyName>Monobot</AssemblyName>
+    <RootNamespace>MustachedOctoRobot</RootNamespace>
+    <AssemblyName>MustachedOctoRobot</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -97,15 +97,17 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="deps\Newtonsoft.Json.dll" />
-    <None Include="README.md" />
     <None Include="configuration.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include=".gitignore" />
-    <None Include="deps\CsQuery.dll" />
     <None Include="packages.config" />
     <None Include="Web.config" />
     <None Include="app.config" />
+    <None Include="_Layout.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="deps\CsQuery.dll" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utils\" />

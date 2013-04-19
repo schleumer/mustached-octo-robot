@@ -1,11 +1,11 @@
 using System;
 using Newtonsoft.Json.Linq;
 
-namespace Monobot
+namespace MustachedOctoRobot
 {
 	public class Settings
 	{
-
+		public static String ApplicationName = "Mustached Octo Robot";
 		public static JObject Global;
 		public static JObject Sessions;
 

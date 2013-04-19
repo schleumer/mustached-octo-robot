@@ -5,16 +5,17 @@ using System.Threading;
 using ServiceStack.Logging.Support.Logging;
 using System.Collections.Generic;
 
-namespace Monobot
+namespace MustachedOctoRobot
 {
 	public class MainClass
 	{
 		public static List<String> OpenedSessions = new List<String> ();
 		public static void Main (string[] args)
 		{
+
 			LogManager.LogFactory = new ConsoleLogFactory();
 			
-			var appHost = new Monobot.Service();
+			var appHost = new MustachedOctoRobot.Service();
 			appHost.Init();
 			appHost.Start("http://*:8080/");
 			

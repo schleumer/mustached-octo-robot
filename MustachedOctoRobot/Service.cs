@@ -12,7 +12,7 @@ using System.Net;
 using ServiceStack.Logging;
 using ServiceStack.Logging.Support.Logging;
 
-namespace Monobot
+namespace MustachedOctoRobot
 {
 	public class Hello {
 		public string Name { get; set; }
