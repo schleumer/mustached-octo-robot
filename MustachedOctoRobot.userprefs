@@ -4,13 +4,14 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
+          <Option id="ShowAllFiles" value="True" />
           <Node name="MustachedOctoRobot" expanded="True">
-            <Node name="deps" expanded="True">
-              <Node name="CsQuery.dll" selected="True" />
-            </Node>
+            <Node name="deps" expanded="True" />
             <Node name="Properties" expanded="True" />
             <Node name="Services" expanded="True" />
-            <Node name="Utils" expanded="True" />
+            <Node name="Utils" expanded="True">
+              <Node name="Test.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

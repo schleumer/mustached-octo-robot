@@ -104,13 +104,28 @@
     <None Include="packages.config" />
     <None Include="Web.config" />
     <None Include="app.config" />
+    <None Include="deps\CsQuery.dll" />
     <None Include="_Layout.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="deps\CsQuery.dll" />
+    <None Include="Assets\css\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\img\glyphicons-halflings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\img\glyphicons-halflings-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\js\bootstrap.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utils\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\js\" />
+    <Folder Include="Assets\css\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Test.cshtml">
