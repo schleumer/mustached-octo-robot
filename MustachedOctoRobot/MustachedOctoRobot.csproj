@@ -83,6 +83,7 @@
     <Reference Include="System.Web.WebPages">
       <HintPath>..\packages\ServiceStack.Razor.3.9.43\lib\net40\System.Web.WebPages.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Posix" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Settings.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="Utils\Test.cs" />
+    <Compile Include="L.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -105,30 +107,38 @@
     <None Include="Web.config" />
     <None Include="app.config" />
     <None Include="deps\CsQuery.dll" />
-    <None Include="_Layout.cshtml">
+    <None Include="favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Assets\css\bootstrap.min.css">
+    <None Include="App\default.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Assets\img\glyphicons-halflings.png">
+    <None Include="App\_Layout.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Assets\img\glyphicons-halflings-white.png">
+    <None Include="App\css\bootstrap.min.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Assets\js\bootstrap.min.js">
+    <None Include="App\img\glyphicons-halflings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App\img\glyphicons-halflings-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App\js\bootstrap.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App\favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utils\" />
     <Folder Include="Assets\" />
-    <Folder Include="Assets\js\" />
-    <Folder Include="Assets\css\" />
+    <Folder Include="App\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Test.cshtml">
+    <EmbeddedResource Include="App\Test.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

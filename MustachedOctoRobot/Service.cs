@@ -11,6 +11,7 @@ using ServiceStack.Razor;
 using System.Net;
 using ServiceStack.Logging;
 using ServiceStack.Logging.Support.Logging;
+using ServiceStack.WebHost.Endpoints.Support.Markdown;
 
 namespace MustachedOctoRobot
 {
@@ -31,6 +32,21 @@ namespace MustachedOctoRobot
 			return new HelloResponse();
 		}
 	}
+
+	public class Templating{
+		public static string[] css = new string[]{
+			"css/bootstrap.min.css"
+		};
+		public static string[] js = new string[]{
+			"js/bootstrap.min.js"
+		};
+
+		public static string BaseUri = "/";
+
+		public static string GetBaseUri(string relative){
+			return BaseUri + relative;
+		}
+	}
 	
 	//Define the Web Services AppHost
 	public class Service : AppHostHttpListenerBase {
@@ -41,6 +57,10 @@ namespace MustachedOctoRobot
 			Plugins.Add(new RazorFormat());
 			Routes
 				.Add<Hello>("/hello/{Name}");
+
+			SetConfig(new EndpointHostConfig{
+				DebugMode = true
+			});
 		}
 	}
 }

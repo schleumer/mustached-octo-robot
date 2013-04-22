@@ -1,17 +1,17 @@
 ﻿<Properties GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MustachedOctoRobot/Program.cs">
+    <Files>
+      <File FileName="MustachedOctoRobot/Program.cs" Line="38" Column="41" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Option id="ShowAllFiles" value="True" />
           <Node name="MustachedOctoRobot" expanded="True">
-            <Node name="deps" expanded="True" />
-            <Node name="Properties" expanded="True" />
-            <Node name="Services" expanded="True" />
-            <Node name="Utils" expanded="True">
-              <Node name="Test.cs" selected="True" />
-            </Node>
+            <Node name="App" expanded="True" />
+            <Node name="Utils" expanded="True" />
+            <Node name="Program.cs" selected="True" />
           </Node>
         </State>
       </Pad>
