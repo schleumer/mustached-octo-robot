@@ -94,7 +94,8 @@
     <Compile Include="Settings.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="Utils\Test.cs" />
-    <Compile Include="L.cs" />
+    <Compile Include="Templating.cs" />
+    <Compile Include="Language.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -131,6 +132,7 @@
     <None Include="App\favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="App\Sessions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utils\" />

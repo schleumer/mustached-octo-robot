@@ -27,6 +27,8 @@ namespace MustachedOctoRobot
 			Templating.BaseUri = "/app/";
 
 			LogManager.LogFactory = new ConsoleLogFactory ();
+
+			Settings.Load ();
 			
 			var appHost = new MustachedOctoRobot.Service ();
 			string localBinding = "http://localhost:8080/";
@@ -38,7 +40,7 @@ namespace MustachedOctoRobot
 			process.StartInfo.FileName = "firefox";
 			process.StartInfo.WorkingDirectory = System.IO.Directory.GetCurrentDirectory();
 			process.StartInfo.Arguments = "\"" + localBinding + "app\"";
-			process.Start();
+			//process.Start();
 
 			Console.ReadKey();
 

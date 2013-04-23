@@ -1,8 +1,13 @@
 ﻿<Properties GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MustachedOctoRobot/Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MustachedOctoRobot/Settings.cs">
     <Files>
-      <File FileName="MustachedOctoRobot/Program.cs" Line="38" Column="41" />
+      <File FileName="MustachedOctoRobot/Program.cs" Line="43" Column="6" />
+      <File FileName="MustachedOctoRobot/App/Sessions.cshtml" Line="1" Column="1" />
+      <File FileName="MustachedOctoRobot/App/_Layout.cshtml" Line="10" Column="42" />
+      <File FileName="MustachedOctoRobot/Service.cs" Line="1" Column="1" />
+      <File FileName="MustachedOctoRobot/Settings.cs" Line="20" Column="46" />
+      <File FileName="MustachedOctoRobot/SessionNodeStore.cs" Line="126" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +16,7 @@
           <Node name="MustachedOctoRobot" expanded="True">
             <Node name="App" expanded="True" />
             <Node name="Utils" expanded="True" />
-            <Node name="Program.cs" selected="True" />
+            <Node name="Settings.cs" selected="True" />
           </Node>
         </State>
       </Pad>

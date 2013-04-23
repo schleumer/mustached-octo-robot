@@ -67,9 +67,9 @@ namespace MustachedOctoRobot
 			}
 		}
 			
-		private string _color;
+		private dynamic _color;
 			
-		public string Color {
+		public dynamic Color {
 			get { 
 				return _color;
 			}
@@ -125,24 +125,21 @@ namespace MustachedOctoRobot
 			}
 		}
 			
-			
 	}
 		
 	public class SessionNodeStore : Dictionary<string, SessionNode>
 	{
-
 		public SessionNodeStore ()
 		{
-
-			foreach (var item in Settings.Sessions) {
-				var i = item.Value;
-				this.Add (item.Key ,new SessionNode (){
-						Name = (string)i["name"],
-						Url = (string)i["url"],
-						Nickname = (string)i["nickname"],
-						Color = new SessionColors()[System.Convert.ToInt32(i["cor"])]
-					});
-			}
+//			foreach (var item in Settings.Sessions) {
+//				var i = item.Value;
+//				this.Add (item.Key ,new SessionNode (){
+//						Name = (string)i["name"],
+//						Url = (string)i["url"],
+//						Nickname = (string)i["nickname"],
+//						Color = new SessionColors()[System.Convert.ToInt32(i["cor"])]
+//					});
+//			}
 		}
 	}
 }
