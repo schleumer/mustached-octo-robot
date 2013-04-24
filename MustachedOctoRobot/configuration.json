@@ -1,13 +1,13 @@
 {
-	"sessions" : {
-		"teste-1-adsasdasdasd" : {
-			"name" : "Teste 1",
-			"url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
-			"nickname" : "OiEuSouUmBot",
-			"cor" : 5,
-			"service" : "uol",
-			"messages" : ["Oi, eu sou o Goku","Oi"],
-			"privateMessages" : ["Oi, eu sou o Goku","Oi"]
+	"Sessions" : [
+		{
+			"Name" : "Teste 1",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
 		}
-	}
+	]
 }

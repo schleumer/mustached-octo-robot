@@ -111,27 +111,13 @@
     <None Include="favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="App\default.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="App\_Layout.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="App\css\bootstrap.min.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="App\img\glyphicons-halflings.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="App\img\glyphicons-halflings-white.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="App\js\bootstrap.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="App\favicon.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="App\default.cshtml" />
+    <None Include="App\_Layout.cshtml" />
+    <None Include="App\css\bootstrap.min.css" />
+    <None Include="App\img\glyphicons-halflings.png" />
+    <None Include="App\img\glyphicons-halflings-white.png" />
+    <None Include="App\js\bootstrap.min.js" />
+    <None Include="App\favicon.ico" />
     <None Include="App\Sessions.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -140,8 +126,6 @@
     <Folder Include="App\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="App\Test.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="App\Test.cshtml" />
   </ItemGroup>
 </Project>

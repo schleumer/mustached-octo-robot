@@ -114,6 +114,12 @@ namespace MustachedOctoRobot
 				this.OnPropertyChanged ("PrivateMessages");
 			}
 		}
+
+		public string Status = "OFF";
+
+		public void Shot(){
+			
+		}
 			
 		public event PropertyChangedEventHandler PropertyChanged;
 
@@ -127,7 +133,7 @@ namespace MustachedOctoRobot
 			
 	}
 		
-	public class SessionNodeStore : Dictionary<string, SessionNode>
+	public class SessionNodeStore : List<SessionNode>
 	{
 		public SessionNodeStore ()
 		{

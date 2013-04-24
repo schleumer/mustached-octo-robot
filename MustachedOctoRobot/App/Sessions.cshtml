@@ -1,0 +1,13 @@
+<div class="sessions row">
+	@foreach(var i  in Settings.Global.Sessions){
+		<div class="session well well-small span3">
+			<div>
+				<span class="pull-left">
+					[@i.Status] 
+					<b>@i.Name</b>
+				</span> 
+				<a href="" class="btn btn-mini pull-right">LIGAR</a>
+			</div>
+		</div>	
+	}
+</div>
