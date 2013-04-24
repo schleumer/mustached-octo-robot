@@ -30,8 +30,8 @@ namespace MustachedOctoRobot
 
 			Settings.Load ();
 			
-			var appHost = new MustachedOctoRobot.Service ();
-			string localBinding = "http://localhost:8080/";
+			var appHost = new MustachedOctoRobot.HostService ();
+			string localBinding = "http://*:8080/";
 			appHost.Init ();
 				appHost.Start (localBinding);
 			("\n\nListening on "+ localBinding + "..").Print ();

@@ -31,6 +31,21 @@ namespace MustachedOctoRobot
 
 	public class SessionNode
 	{
+
+		public enum Statuses {Off=0,On=1};
+
+		private int _id;
+			
+		public int Id {
+			get { 
+				return _id;
+			}
+			set { 
+				_id = value;
+				this.OnPropertyChanged ("Id");
+			}
+		}
+			
 		private string _name;
 			
 		public string Name {
@@ -115,7 +130,7 @@ namespace MustachedOctoRobot
 			}
 		}
 
-		public string Status = "OFF";
+		public SessionNode.Statuses Status = SessionNode.Statuses.Off;
 
 		public void Shot(){
 			

@@ -2,14 +2,9 @@
 <html lang="en">
 	<head>
 		<title>@MustachedOctoRobot.Settings.ApplicationName</title>
-		@foreach(var i in MustachedOctoRobot.Templating.css){
-			<link rel="stylesheet" href="@(MustachedOctoRobot.Templating.GetBaseUri(i))" type="text/css" />
-		}
-		
-		@foreach(var i in MustachedOctoRobot.Templating.js){
-			<script type="text/javascript" scr="@(MustachedOctoRobot.Templating.GetBaseUri(i))" ></script>
-		}
-		
+		<link rel="stylesheet" href="@(T.GetBaseUri("css/bootstrap.min.css"))" type="text/css" />
+    <script type="text/javascript" src="@(T.GetBaseUri("js/jquery.min.js"))" ></script>
+		<script type="text/javascript" src="@(T.GetBaseUri("js/bootstrap.min.js"))" ></script>
 		<style type="text/css">
 			body {
 				padding-top: 60px;

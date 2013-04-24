@@ -1,13 +1,114 @@
-<div class="sessions row">
-	@foreach(var i  in Settings.Global.Sessions){
-		<div class="session well well-small span3">
-			<div>
-				<span class="pull-left">
-					[@i.Status] 
-					<b>@i.Name</b>
-				</span> 
-				<a href="" class="btn btn-mini pull-right">LIGAR</a>
-			</div>
-		</div>	
+<style>
+	.sessions .session > div{
+		width: 100%;
+		height: 25px;
+		line-height: 23px;
+		padding-top: 4px;
 	}
+	.sessions .session{
+		margin-left: 19px;
+	}
+	.sessions .session button > i{
+		margin-top: 1px;
+	}
+</style>
+<script type="text/javascript">
+	var Session = function(data){
+		for(var i in data){
+			this[i] = data[i];
+		}
+		this.Html = {};
+		this.Render = function(){
+
+			$session = $("<div/>",{
+				"class": "session span3"
+			});
+
+			$innerSession = $("<div/>", {
+				"class": "label"
+			}).appendTo($session);
+
+			$sessionName = $("<span/>", {
+				"class": "pull-left session-name",
+				"html" : this.Name
+			}).appendTo($innerSession);
+			
+			$btnGroup = $("<div/>",{
+				"class": "pull-right"
+			}).appendTo($innerSession);
+
+			$("<button/>",{
+				"class" : "btn btn-mini shot-session",
+				"title" : "@L.Get("Power On")",
+				"html" : [
+					$("<i/>",{
+						"class" : "icon-off"
+					})
+				]
+			}).appendTo($btnGroup);
+
+			$("<button/>",{
+				"class" : "btn btn-mini edit-session",
+				"title" : "@L.Get("Edit")",
+				"html" : [
+					$("<i/>",{
+						"class" : "icon-pencil"
+					})
+				]
+			}).appendTo($btnGroup);
+
+			$("<button/>",{
+				"class" : "btn btn-mini delete-session",
+				"title" : "@L.Get("Delete")",
+				"html" : [
+					$("<i/>",{
+						"class" : "icon-trash"
+					})
+				]
+			}).appendTo($btnGroup);
+
+			$("> button", $btnGroup).tooltip({/*container: "body"*/});
+			
+			if(this.Element){
+				this.Element.html($innerSession);	
+			}else{
+				this.Element = $session;	
+			}
+			
+			return $session;
+		};
+		this.Element = this.Render();
+		return this;
+	};
+
+	var SessionManager = {
+		Data : [],
+		Init : function(sessions){
+			$('.sessions .row').empty();
+			$.each(sessions, function () {
+				var session = new Session(this);
+				session.Render();
+				$('.sessions .row').append(session.Element);
+				SessionManager.Data.push(session);
+			});
+		}
+	};
+	$(function(){
+		var timer = null;
+		function reload(){
+			$.getJSON("/AllSessions?format=json",function(e){
+				Data = e;
+				SessionManager.Init(e);
+				timer = setTimeout(reload, 3000);
+			});
+		}
+		reload();
+	});
+</script>
+<div class="sessions container well well-small">
+	<h2>
+		@L.Get("Sessions")
+	</h2>
+	<div class="row">
+	</div>
 </div>

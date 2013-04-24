@@ -15,33 +15,38 @@ using ServiceStack.WebHost.Endpoints.Support.Markdown;
 
 namespace MustachedOctoRobot
 {
-	public class Hello {
-		public string Name { get; set; }
-	}
-	
-	public class HelloResponse {
-		public HelloResponse(){
-		}
-		public string Result { get; set; }
-	}
-	
-	public class HelloService : Service
+	[Route("/AllSessions")]
+	[DataContract]
+	public class AllSessions : IReturn<SessionNodeStore>
 	{
-		public object Any(Hello request) 
+		public AllSessions()
 		{
-			return new HelloResponse();
+
+		}
+	}
+	
+	public class RobotResponse {
+    	public RobotResponse() {
+    	}
+    	public string Result { get; set; }
+	}
+	
+	public class RobotService : Service
+	{
+		public object Any(AllSessions request) 
+		{
+			return Settings.Global.Sessions;
 		}
 	}
 	
 	//Define the Web Services AppHost
-	public class Service : AppHostHttpListenerBase {
-		public Service() : base("StarterTemplate HttpListener", typeof(HelloService).Assembly) { }
+	public class HostService : AppHostHttpListenerBase {
+		public HostService() : base("StarterTemplate HttpListener", typeof(HostService).Assembly) { }
 		
 		public override void Configure(Funq.Container container) {
 			LogManager.LogFactory = new ConsoleLogFactory();
 			Plugins.Add(new RazorFormat());
-			Routes
-				.Add<Hello>("/hello/{Name}");
+			
 
 			SetConfig(new EndpointHostConfig{
 				DebugMode = true

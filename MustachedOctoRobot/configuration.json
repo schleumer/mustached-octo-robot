@@ -1,7 +1,98 @@
 {
 	"Sessions" : [
 		{
+			"Id" : 1,
 			"Name" : "Teste 1",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 2,
+			"Name" : "Teste 2",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 3,
+			"Name" : "Teste 3",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 4,
+			"Name" : "Teste 4",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 5,
+			"Name" : "Teste 5",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 6,
+			"Name" : "Teste 6",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 7,
+			"Name" : "Teste 7",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 8,
+			"Name" : "Teste 8",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 9,
+			"Name" : "Teste 9",
+			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
+			"Nickname" : "OiEuSouUmBot",
+			"Color" : 5,
+			"Service" : "uol",
+			"Messages" : ["Oi, eu sou o Goku","Oi"],
+			"PrivateMessages" : ["Oi, eu sou o Goku","Oi"]
+		},
+		{
+			"Id" : 10,
+			"Name" : "Teste 10",
 			"Url" : "http://batepapo.uol.com.br/goroom.html?nodeid=908941",
 			"Nickname" : "OiEuSouUmBot",
 			"Color" : 5,

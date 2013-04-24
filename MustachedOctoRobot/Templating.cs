@@ -7,6 +7,7 @@ namespace MustachedOctoRobot
 			"css/bootstrap.min.css"
 		};
 		public static string[] js = new string[]{
+			"js/jquery.min.js",
 			"js/bootstrap.min.js"
 		};
 		
