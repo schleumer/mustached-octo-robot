@@ -3,14 +3,9 @@
 	<head>
 		<title>@MustachedOctoRobot.Settings.ApplicationName</title>
 		<link rel="stylesheet" href="@(T.GetBaseUri("css/bootstrap.min.css"))" type="text/css" />
+    <script type="text/javascript" src="@(T.GetBaseUri("js/underscore.min.js"))" ></script>
     <script type="text/javascript" src="@(T.GetBaseUri("js/jquery.min.js"))" ></script>
 		<script type="text/javascript" src="@(T.GetBaseUri("js/bootstrap.min.js"))" ></script>
-		<style type="text/css">
-			body {
-				padding-top: 60px;
-				padding-bottom: 40px;
-			}
-    	</style>
 		<link rel="icon" href="@(MustachedOctoRobot.Templating.GetBaseUri("favicon.ico"))" type="image/x-icon" />
 	</head>
 
@@ -24,7 +19,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">@MustachedOctoRobot.Settings.ApplicationName</a>
+          <a class="brand" href="index.html"><span class="title">@MustachedOctoRobot.Settings.ApplicationName</span> <span class="logo"></span></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="@T.GetBaseUri("sessions")">@L.Get("Sessions")</a></li>
@@ -54,7 +49,6 @@
         </div>
       </div>
     </div>
-
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
@@ -65,7 +59,7 @@
       </div>-->
 
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row-fluid">
         @RenderBody()
       </div>
 

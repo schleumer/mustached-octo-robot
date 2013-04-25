@@ -9,7 +9,10 @@
 		margin-left: 19px;
 	}
 	.sessions .session button > i{
-		margin-top: 1px;
+		margin-top: 0px;
+	}
+	.sessions .session .controls{
+		line-height:20px;
 	}
 </style>
 <script type="text/javascript">
@@ -21,56 +24,69 @@
 		this.Render = function(){
 
 			$session = $("<div/>",{
-				"class": "session span3"
+				"class": "session block block-dark block-head-btn span3"
 			});
 
-			$innerSession = $("<div/>", {
-				"class": "label"
-			}).appendTo($session);
+			$body = $("<div/>", {
+				"class" : "block-body",
+				"html": "asdasdasdasasd"
+			});
 
-			$sessionName = $("<span/>", {
-				"class": "pull-left session-name",
-				"html" : this.Name
-			}).appendTo($innerSession);
-			
-			$btnGroup = $("<div/>",{
-				"class": "pull-right"
-			}).appendTo($innerSession);
+			$innerSession = $("<p/>", {
+				"class": "block-heading"
+
+			});
+
+			$session.append($innerSession,$body);
 
 			$("<button/>",{
-				"class" : "btn btn-mini shot-session",
+				"class" : "shot-session btn btn-mini",
 				"title" : "@L.Get("Power On")",
+				"data-id" : this.Id,
 				"html" : [
 					$("<i/>",{
 						"class" : "icon-off"
 					})
 				]
-			}).appendTo($btnGroup);
+			}).appendTo($innerSession);
 
 			$("<button/>",{
-				"class" : "btn btn-mini edit-session",
+				"class" : "edit-session btn btn-mini",
 				"title" : "@L.Get("Edit")",
 				"html" : [
 					$("<i/>",{
 						"class" : "icon-pencil"
 					})
 				]
-			}).appendTo($btnGroup);
+			}).appendTo($innerSession);
 
 			$("<button/>",{
-				"class" : "btn btn-mini delete-session",
+				"class" : "delete-session btn btn-mini",
 				"title" : "@L.Get("Delete")",
 				"html" : [
 					$("<i/>",{
 						"class" : "icon-trash"
 					})
 				]
-			}).appendTo($btnGroup);
+			}).appendTo($innerSession);
 
-			$("> button", $btnGroup).tooltip({/*container: "body"*/});
+
+			$sessionName = $("<span/>", {
+				"class": "session-name",
+				"html" : this.Name
+			}).appendTo($innerSession);
+
+
+			$innerSession.find('button').wrap('<span class="pull-right" />');
+
+
+
+			
+
+			//$("> button", $btnGroup).tooltip({/*container: "body"*/});
 			
 			if(this.Element){
-				this.Element.html($innerSession);	
+				this.Element.html($session.children());	
 			}else{
 				this.Element = $session;	
 			}
@@ -88,7 +104,7 @@
 			$.each(sessions, function () {
 				var session = new Session(this);
 				session.Render();
-				$('.sessions .row').append(session.Element);
+				$('.sessions').append(session.Element);
 				SessionManager.Data.push(session);
 			});
 		}
@@ -99,16 +115,20 @@
 			$.getJSON("/AllSessions?format=json",function(e){
 				Data = e;
 				SessionManager.Init(e);
-				timer = setTimeout(reload, 3000);
+				//timer = setTimeout(reload, 3000);
 			});
 		}
 		reload();
+		$(document).on("click",".session .shot-session",function(){
+			var url = _.str.sprintf("/sessions/%s/shot",$(this).data("id"));
+			console.log(url);
+		});
 	});
 </script>
-<div class="sessions container well well-small">
-	<h2>
-		@L.Get("Sessions")
-	</h2>
-	<div class="row">
+<div class="block block-dark span12">
+	<p class="block-heading">
+		<span>@L.Get("Sessions")</span>
+	</p>
+	<div class="block-body sessions">
 	</div>
 </div>
