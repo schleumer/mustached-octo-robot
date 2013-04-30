@@ -6,7 +6,7 @@
 		padding-top: 4px;
 	}
 	.sessions .session{
-		margin-left: 19px;
+		margin-left: 15px !important;
 	}
 	.sessions .session button > i{
 		margin-top: 0px;
@@ -24,12 +24,12 @@
 		this.Render = function(){
 
 			$session = $("<div/>",{
-				"class": "session block block-dark block-head-btn span3"
+				"class": "session block block-dark block-head-btn span4"
 			});
 
 			$body = $("<div/>", {
 				"class" : "block-body",
-				"html": "asdasdasdasasd"
+				"html": '@Html.Raw(L.Get("Click on <i class=\"icon-off icon-white\"></i> for start the session."))'
 			});
 
 			$innerSession = $("<p/>", {
@@ -121,14 +121,17 @@
 		reload();
 		$(document).on("click",".session .shot-session",function(){
 			var url = _.str.sprintf("/sessions/%s/shot",$(this).data("id"));
-			console.log(url);
+			$.get(url, function(e){
+				
+			});
 		});
 	});
 </script>
-<div class="block block-dark span12">
+<div class="block block-dark">
 	<p class="block-heading">
 		<span>@L.Get("Sessions")</span>
 	</p>
 	<div class="block-body sessions">
 	</div>
+	<div class="clearfix"></div>
 </div>

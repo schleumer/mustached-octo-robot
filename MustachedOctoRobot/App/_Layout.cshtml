@@ -3,6 +3,7 @@
 	<head>
 		<title>@MustachedOctoRobot.Settings.ApplicationName</title>
 		<link rel="stylesheet" href="@(T.GetBaseUri("css/bootstrap.min.css"))" type="text/css" />
+    <link rel="stylesheet" href="@(T.GetBaseUri("css/main.css"))" type="text/css" />
     <script type="text/javascript" src="@(T.GetBaseUri("js/underscore.min.js"))" ></script>
     <script type="text/javascript" src="@(T.GetBaseUri("js/jquery.min.js"))" ></script>
 		<script type="text/javascript" src="@(T.GetBaseUri("js/bootstrap.min.js"))" ></script>
@@ -62,10 +63,6 @@
       <div class="row-fluid">
         @RenderBody()
       </div>
-
-      <footer>
-        <p>&copy; Company 2013</p>
-      </footer>
 
     </div> <!-- /container -->
   </body>

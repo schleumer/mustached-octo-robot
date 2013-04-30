@@ -24,6 +24,28 @@ namespace MustachedOctoRobot
 
 		}
 	}
+
+	[Route("/sessions/{SessionId}/shot")]
+	[DataContract]
+	public class Minion : IReturn<Minion>
+	{
+		public int _sessionId = 0;
+		[DataMember]
+		public int SessionId {
+			get{
+				return this._sessionId;
+			} 
+			set{
+				this._sessionId = value;
+			}
+		}
+		public Minion()
+		{
+			new Thread(() => {
+				SessionNode node = Settings.Global.Sessions.First(x => x.Id == this.SessionId);
+			}).Start();
+		}
+	}
 	
 	public class RobotResponse {
     	public RobotResponse() {
@@ -36,6 +58,10 @@ namespace MustachedOctoRobot
 		public object Any(AllSessions request) 
 		{
 			return Settings.Global.Sessions;
+		}
+
+		public object Get(Minion request){
+			return request;
 		}
 	}
 	
